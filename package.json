@@ -1,7 +1,6 @@
 {
   "name": "token-distributors",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,6 @@
   "dependencies": {
     "ethers": "^6.13.2",
     "express": "^4.20.0"
-  }
+  },
+  "description": ""
 }

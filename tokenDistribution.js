@@ -178,7 +178,9 @@ async function distributeTokens(
         ethers.parseUnits(amount.toString(), 18, { gasPrice })
       );
       await tx.wait();
-      console.log(`Sent ${amount} tokens to ${address}`);
+      //console.log(tx)
+      const hash = tx.hash
+      console.log(`Sent ${amount} tokens to ${address} with txnHash: ${hash}`);
     } catch (error) {
       console.error(`Error sending tokens to ${address}: ${error.message}`);
     }
